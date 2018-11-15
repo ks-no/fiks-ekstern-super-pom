@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>no.ks.fiks.pom</groupId>
   <artifactId>fiks-ekstern-super-pom</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.2-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>fiks-ekstern-super-pom</name>
   <description>Kan brukes i Fiks-prosjekter som forelderpom til bibliotek som skal lastes opp på maven central</description>
@@ -27,6 +26,7 @@
     <connection>scm:git:git@github.com:ks-no/fiks-ekstern-super-pom.git</connection>
     <developerConnection>scm:git:git@github.com:ks-no/fiks-ekstern-super-pom.git</developerConnection>
     <url>https://github.com/ks-no/fiks-ekstern-super-pom</url>
+    <tag>HEAD</tag>
   </scm>
   <distributionManagement>
     <repository>
@@ -154,7 +154,7 @@
         </plugins>
       </build>
       <properties>
-        <versionPrefix></versionPrefix>
+        <versionPrefix />
       </properties>
     </profile>
   </profiles>
