@@ -46,7 +46,7 @@
         <maven-javadoc-plugin.version>3.0.1</maven-javadoc-plugin.version>
         <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
         <revision>0.0.0</revision>
-        <versionPrefix>-SNAPSHOT</versionPrefix>
+        <changelist>-SNAPSHOT</changelist>
 	<maven-flatten-update-pom>true</maven-flatten-update-pom>
     </properties>
     <build>
@@ -167,7 +167,6 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>flatten-maven-plugin</artifactId>
-<configuration><skip>true</skip></configuration>
             </plugin>
             <plugin>
                 <artifactId>maven-enforcer-plugin</artifactId>
@@ -197,7 +196,7 @@
                 </plugins>
             </build>
             <properties>
-                <versionPrefix/>
+                <changelist/>
             </properties>
         </profile>
     </profiles>
