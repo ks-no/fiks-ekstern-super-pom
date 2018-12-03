@@ -45,7 +45,7 @@
         <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
         <maven-javadoc-plugin.version>3.0.1</maven-javadoc-plugin.version>
         <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
-        <skip-deploy-to-local-nexus>false</skip-deploy-to-local-nexus>
+        <skip-deploy-to-local-nexus>true</skip-deploy-to-local-nexus>
         <revision>0.0.0</revision>
         <changelist>-SNAPSHOT</changelist>
 	<maven-flatten-update-pom>true</maven-flatten-update-pom>
@@ -91,7 +91,7 @@
                     <groupId>org.sonatype.plugins</groupId>
                     <artifactId>nexus-staging-maven-plugin</artifactId>
                     <version>${nexus-staging-maven-plugin.version}</version>
-                    <extensions>true</extensions>
+                    <extensions>${skip-deploy-to-local-nexus}</extensions>
                     <configuration>
                         <serverId>oss.sonatype.org</serverId>
                         <nexusUrl>https://oss.sonatype.org/</nexusUrl>
