@@ -45,6 +45,7 @@
         <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
         <maven-javadoc-plugin.version>3.0.1</maven-javadoc-plugin.version>
         <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
+        <skip-deploy-to-local-nexus>false</skip-deploy-to-local-nexus>
         <revision>0.0.0</revision>
         <changelist>-SNAPSHOT</changelist>
 	<maven-flatten-update-pom>true</maven-flatten-update-pom>
@@ -75,6 +76,16 @@
                             </goals>
                         </execution>
                     </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>3.0.0-M1</version>
+                    <configuration>
+                        <skip>${skip-deploy-to-local-nexus}</skip>
+                        <altReleaseDeploymentRepository>ks-nexus::default::http://ksjenkins1-u.usrv.ubergenkom.no:8082/repository/ks-nexus/</altReleaseDeploymentRepository>
+                        <altSnapshotDeploymentRepository>ks-nexus-snapshot::default::http://ksjenkins1-u.usrv.ubergenkom.no:8082/repository/ks-nexus-snapshot/</altSnapshotDeploymentRepository>
+                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.sonatype.plugins</groupId>
