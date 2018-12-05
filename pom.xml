@@ -45,7 +45,7 @@
         <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
         <maven-javadoc-plugin.version>3.0.1</maven-javadoc-plugin.version>
         <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
-        <skip-deploy-to-local-nexus>true</skip-deploy-to-local-nexus>
+        <use-nexus-staging-maven-plugin>true</use-nexus-staging-maven-plugin>
         <revision>0.0.0</revision>
         <changelist>-SNAPSHOT</changelist>
 	<maven-flatten-update-pom>true</maven-flatten-update-pom>
@@ -82,16 +82,14 @@
                     <artifactId>maven-deploy-plugin</artifactId>
                     <version>3.0.0-M1</version>
                     <configuration>
-                        <skip>${skip-deploy-to-local-nexus}</skip>
-                        <altReleaseDeploymentRepository>ks-nexus::http://ksjenkins1-u.usrv.ubergenkom.no:8082/repository/ks-nexus/</altReleaseDeploymentRepository>
-                        <altSnapshotDeploymentRepository>ks-nexus-snapshot::http://ksjenkins1-u.usrv.ubergenkom.no:8082/repository/ks-nexus-snapshot/</altSnapshotDeploymentRepository>
+                        <skip>${use-nexus-staging-maven-plugin}</skip>
                     </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.sonatype.plugins</groupId>
                     <artifactId>nexus-staging-maven-plugin</artifactId>
                     <version>${nexus-staging-maven-plugin.version}</version>
-                    <extensions>${skip-deploy-to-local-nexus}</extensions>
+                    <extensions>${use-nexus-staging-maven-plugin}</extensions>
                     <configuration>
                         <serverId>oss.sonatype.org</serverId>
                         <nexusUrl>https://oss.sonatype.org/</nexusUrl>
