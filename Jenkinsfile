@@ -1,4 +1,5 @@
-ciFriendlyLibBuild{
-        mavenDeployArgs = "-Dmaven-flatten-update-pom=false -Dmaven.install.skip=true"
+ciFriendlyLibBuild {
+    mavenDeployArgs = "-Dmaven-flatten-update-pom=false -Dmaven.install.skip=true"
 	useRevisionAsVersion = false
+	deployToLocalNexus = true
 }
