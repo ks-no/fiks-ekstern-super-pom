@@ -83,8 +83,8 @@
                     <version>3.0.0-M1</version>
                     <configuration>
                         <skip>${skip-deploy-to-local-nexus}</skip>
-                        <altReleaseDeploymentRepository>ks-nexus::default::http://ksjenkins1-u.usrv.ubergenkom.no:8082/repository/ks-nexus/</altReleaseDeploymentRepository>
-                        <altSnapshotDeploymentRepository>ks-nexus-snapshot::default::http://ksjenkins1-u.usrv.ubergenkom.no:8082/repository/ks-nexus-snapshot/</altSnapshotDeploymentRepository>
+                        <altReleaseDeploymentRepository>ks-nexus::http://ksjenkins1-u.usrv.ubergenkom.no:8082/repository/ks-nexus/</altReleaseDeploymentRepository>
+                        <altSnapshotDeploymentRepository>ks-nexus-snapshot::http://ksjenkins1-u.usrv.ubergenkom.no:8082/repository/ks-nexus-snapshot/</altSnapshotDeploymentRepository>
                     </configuration>
                 </plugin>
                 <plugin>
