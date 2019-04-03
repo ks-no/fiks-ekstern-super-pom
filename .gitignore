@@ -2,3 +2,6 @@ target/
 .idea/
 *.iml
 .flattened-pom.xml
+.project
+.settings
+.vscode
