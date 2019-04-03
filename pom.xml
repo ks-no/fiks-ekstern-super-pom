@@ -120,9 +120,6 @@
                         </execution>
                         <execution>
                             <id>validate-snap</id>
-                            <goals>
-                                <goal>enforce</goal>
-                            </goals>
                             <configuration>
                                 <rules>
                                     <requireSnapshotVersion>
