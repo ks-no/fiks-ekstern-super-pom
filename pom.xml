@@ -40,9 +40,6 @@
         </snapshotRepository>
     </distributionManagement>
     <properties>
-        <maven.compiler.release>11</maven.compiler.release>
-        <enforcer.jdk.version>${maven.compiler.release}</enforcer.jdk.version>
-
         <autoReleaseAfterClose>false</autoReleaseAfterClose>
         <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
         <maven-source-plugin.version>3.1.0</maven-source-plugin.version>
@@ -114,9 +111,6 @@
                                     <requireMavenVersion>
                                         <version>3.5</version>
                                     </requireMavenVersion>
-                                    <requireJavaVersion>
-                                        <version>${enforcer.jdk.version}</version>
-                                    </requireJavaVersion>
                                 </rules>
                             </configuration>
                         </execution>
