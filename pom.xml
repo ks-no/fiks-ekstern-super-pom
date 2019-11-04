@@ -42,7 +42,7 @@
     <properties>
         <autoReleaseAfterClose>false</autoReleaseAfterClose>
         <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
-        <maven-source-plugin.version>3.1.0</maven-source-plugin.version>
+        <maven-source-plugin.version>3.2.0</maven-source-plugin.version>
         <maven-javadoc-plugin.version>3.1.1</maven-javadoc-plugin.version>
         <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
         <use-nexus-staging-maven-plugin>true</use-nexus-staging-maven-plugin>
