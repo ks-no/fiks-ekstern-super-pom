@@ -5,7 +5,7 @@
 
     <groupId>no.ks.fiks.pom</groupId>
     <artifactId>fiks-ekstern-super-pom</artifactId>
-    <version>1.0.5-SNAPSHOT</version>
+    <version>1.0.5</version>
     <packaging>pom</packaging>
     <name>fiks-ekstern-super-pom</name>
     <description>Kan brukes i Fiks-prosjekter som forelderpom til bibliotek som skal lastes opp på maven central</description>
