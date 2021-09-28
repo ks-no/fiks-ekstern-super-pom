@@ -126,19 +126,11 @@
                             <configuration>
                                 <rules>
                                     <requireReleaseVersion/>
-                                    <requireReproducibleBuilds implementation="org.scijava.maven.plugin.enforcer.RequireReproducibleBuilds"/>
+                                    <requireReleaseDeps/>
                                 </rules>
                             </configuration>
                         </execution>
-
                     </executions>
-                    <dependencies>
-                        <dependency>
-                            <groupId>org.scijava</groupId>
-                            <artifactId>scijava-maven-plugin</artifactId>
-                            <version>2.1.0</version>
-                        </dependency>
-                    </dependencies>
                     <inherited>true</inherited>
                 </plugin>
             </plugins>
