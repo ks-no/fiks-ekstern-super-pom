@@ -10,11 +10,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>fiks-ekstern-kotlin-superpom</artifactId>
+    <packaging>pom</packaging>
 
     <properties>
         <kotlin.version>1.6.10</kotlin.version>
         <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
-        <dokka.version>1.6.0</dokka.version>
+        <dokka.version>1.6.10</dokka.version>
         <kotlin-logging.version>2.1.21</kotlin-logging.version>
         <kotest.version>5.0.3</kotest.version>
     </properties>
