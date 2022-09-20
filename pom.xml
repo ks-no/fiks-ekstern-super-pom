@@ -51,6 +51,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <autoReleaseAfterClose>false</autoReleaseAfterClose>
+        <keepCentralStagingOnFailure>false</keepCentralStagingOnFailure>
         <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
         <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
         <maven-javadoc-plugin.version>3.4.1</maven-javadoc-plugin.version>
@@ -112,6 +113,7 @@
                         <serverId>oss.sonatype.org</serverId>
                         <nexusUrl>https://oss.sonatype.org/</nexusUrl>
                         <autoReleaseAfterClose>${autoReleaseAfterClose}</autoReleaseAfterClose>
+                        <keepStagingRepositoryOnCloseRuleFailure>${keepCentralStagingOnFailure}</keepStagingRepositoryOnCloseRuleFailure>
                     </configuration>
                 </plugin>
                 <plugin>
