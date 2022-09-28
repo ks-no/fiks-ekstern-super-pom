@@ -52,6 +52,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <autoReleaseAfterClose>false</autoReleaseAfterClose>
         <keepCentralStagingOnFailure>false</keepCentralStagingOnFailure>
+
+        <slf4j.versions>1.7.36</slf4j.versions>
+        <logback.version>1.2.11</logback.version>
+
         <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
         <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
         <maven-javadoc-plugin.version>3.4.1</maven-javadoc-plugin.version>
@@ -64,6 +68,21 @@
         <maven-surefire-plugin.version>3.0.0-M7</maven-surefire-plugin.version>
         <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>${logback.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <pluginManagement>
