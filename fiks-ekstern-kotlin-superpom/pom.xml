@@ -17,7 +17,7 @@
         <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
         <dokka.version>1.7.10</dokka.version>
         <kotlin-logging.version>2.1.23</kotlin-logging.version>
-        <kotest.version>5.5.0</kotest.version>
+        <kotest.version>5.5.1</kotest.version>
     </properties>
 
     <dependencyManagement>
