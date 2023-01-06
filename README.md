@@ -6,3 +6,5 @@
 
 
 Superpom for prosjekter som KS legger ut offentlig tilgjengelig under MIT lisensen
+
+__NB!__ standard branch har blitt omdøpt til `main`
