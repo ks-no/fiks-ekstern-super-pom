@@ -256,7 +256,12 @@
             </build>
         </profile>
         <profile>
-            <id>release</id>
+            <id>sign</id>
+            <activation>
+                <property>
+                    <name>env.MAVEN_GPG_PASSPHRASE</name>
+                </property>
+            </activation>
             <build>
                 <plugins>
                     <plugin>
@@ -274,6 +279,12 @@
                     </plugin>
                 </plugins>
             </build>
+            <properties>
+                <changelist/>
+            </properties>
+        </profile>
+        <profile>
+            <id>release</id>
             <properties>
                 <changelist/>
             </properties>
