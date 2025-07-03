@@ -130,7 +130,7 @@
                     <extensions>${use-nexus-staging-maven-plugin}</extensions>
                     <configuration>
                         <serverId>portal-ossrh</serverId>
-                        <nexusUrl>https://central.sonatype.com/</nexusUrl>
+                        <nexusUrl>https://ossrh-staging-api.central.sonatype.com/</nexusUrl>
                         <autoReleaseAfterClose>${autoReleaseAfterClose}</autoReleaseAfterClose>
                         <keepStagingRepositoryOnCloseRuleFailure>${keepCentralStagingOnFailure}</keepStagingRepositoryOnCloseRuleFailure>
                     </configuration>
