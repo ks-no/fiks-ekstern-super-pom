@@ -50,8 +50,6 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <autoReleaseAfterClose>false</autoReleaseAfterClose>
-        <keepCentralStagingOnFailure>false</keepCentralStagingOnFailure>
 
         <slf4j.version>2.0.17</slf4j.version>
         <logback.version>1.5.18</logback.version>
@@ -59,8 +57,6 @@
         <maven-gpg-plugin.version>3.2.8</maven-gpg-plugin.version>
         <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
         <maven-javadoc-plugin.version>3.11.2</maven-javadoc-plugin.version>
-        <nexus-staging-maven-plugin.version>1.7.0</nexus-staging-maven-plugin.version>
-        <use-nexus-staging-maven-plugin>true</use-nexus-staging-maven-plugin>
         <maven-enforcer-plugin.version>3.6.0</maven-enforcer-plugin.version>
         <maven-deploy-plugin.version>3.1.4</maven-deploy-plugin.version>
         <versions-maven-plugin.version>2.18.0</versions-maven-plugin.version>
@@ -119,21 +115,6 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-deploy-plugin</artifactId>
                     <version>${maven-deploy-plugin.version}</version>
-                    <configuration>
-                        <skip>${use-nexus-staging-maven-plugin}</skip>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>org.sonatype.plugins</groupId>
-                    <artifactId>nexus-staging-maven-plugin</artifactId>
-                    <version>${nexus-staging-maven-plugin.version}</version>
-                    <extensions>${use-nexus-staging-maven-plugin}</extensions>
-                    <configuration>
-                        <serverId>portal-ossrh</serverId>
-                        <nexusUrl>https://ossrh-staging-api.central.sonatype.com/</nexusUrl>
-                        <autoReleaseAfterClose>${autoReleaseAfterClose}</autoReleaseAfterClose>
-                        <keepStagingRepositoryOnCloseRuleFailure>${keepCentralStagingOnFailure}</keepStagingRepositoryOnCloseRuleFailure>
-                    </configuration>
                 </plugin>
                 <plugin>
                     <artifactId>maven-enforcer-plugin</artifactId>
@@ -192,10 +173,6 @@
             </plugin>
             <plugin>
                 <artifactId>maven-javadoc-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
             </plugin>
             <plugin>
                 <artifactId>maven-enforcer-plugin</artifactId>
