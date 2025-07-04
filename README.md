@@ -5,6 +5,4 @@
 ![GitHub Last Commit](https://img.shields.io/github/last-commit/ks-no/fiks-ekstern-super-pom.svg)
 
 
-Superpom for prosjekter som KS legger ut offentlig tilgjengelig under MIT lisensen
-
-__NB!__ standard branch har blitt omdøpt til `main`
+Parent POM for prosjekter som KS Digital publiserer offentlig.
