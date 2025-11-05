@@ -61,7 +61,7 @@
         <versions-maven-plugin.version>2.19.0</versions-maven-plugin.version>
         <maven-compiler-plugin.version>3.14.0</maven-compiler-plugin.version>
         <maven-surefire-plugin.version>3.5.4</maven-surefire-plugin.version>
-        <jacoco-maven-plugin.version>0.8.13</jacoco-maven-plugin.version>
+        <jacoco-maven-plugin.version>0.8.14</jacoco-maven-plugin.version>
         <jackson.version>2.20.0</jackson.version>
         <central-publishing-maven-plugin.version>0.8.0</central-publishing-maven-plugin.version>
         <central-publishing-maven-plugin.ignorePublishedComponents>false</central-publishing-maven-plugin.ignorePublishedComponents>
