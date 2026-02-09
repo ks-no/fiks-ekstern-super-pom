@@ -5,7 +5,7 @@
 
     <groupId>no.ks.fiks.pom</groupId>
     <artifactId>fiks-ekstern-super-pom</artifactId>
-    <version>1.8.1-SNAPSHOT</version>
+    <version>1.9.0</version>
 
     <packaging>pom</packaging>
     <name>fiks-ekstern-super-pom</name>
