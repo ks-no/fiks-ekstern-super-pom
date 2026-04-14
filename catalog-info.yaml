@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: fiks-ekstern-super-pom
+  title: Fiks Ekstern Super POM
+  description: >
+    Parent POM for Maven-prosjekter som publiseres offentlig fra KS Digital.
+  annotations:
+    github.com/project-slug: ks-no/fiks-ekstern-super-pom
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - maven
+    - java
+spec:
+  type: library
+  owner: group:team-utviklerplattform
+  lifecycle: production
