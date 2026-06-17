@@ -63,7 +63,7 @@
         <maven-surefire-plugin.version>3.5.6</maven-surefire-plugin.version>
         <jacoco-maven-plugin.version>0.8.15</jacoco-maven-plugin.version>
         <jackson.version>2.22.0</jackson.version>
-        <central-publishing-maven-plugin.version>0.10.0</central-publishing-maven-plugin.version>
+        <central-publishing-maven-plugin.version>0.11.0</central-publishing-maven-plugin.version>
         <central-publishing-maven-plugin.ignorePublishedComponents>false</central-publishing-maven-plugin.ignorePublishedComponents>
         <central-publishing-maven-plugin.waitUntil>published</central-publishing-maven-plugin.waitUntil>
         <central-publishing-maven-plugin.waitMaxTime>1800</central-publishing-maven-plugin.waitMaxTime>
