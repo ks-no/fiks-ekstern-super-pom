@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - sbom
     tags:
       - '*'
   workflow_dispatch:
