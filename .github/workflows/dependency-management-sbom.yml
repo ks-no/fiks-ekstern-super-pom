@@ -1,0 +1,28 @@
+name: Dependency Management SBOM
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - '*'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sbom-root:
+    uses: ks-no/github-actions-public/.github/workflows/dependency-management-sbom.yml@main
+    secrets: inherit
+    with:
+      sbom_project_name: fiks-ekstern-super-pom-dependency-management
+      is_public: true
+
+  sbom-kotlin-superpom:
+    uses: ks-no/github-actions-public/.github/workflows/dependency-management-sbom.yml@main
+    secrets: inherit
+    with:
+      sbom_project_name: fiks-ekstern-kotlin-superpom-dependency-management
+      working_directory: fiks-ekstern-kotlin-superpom
+      is_public: true
