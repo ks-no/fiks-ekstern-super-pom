@@ -28,12 +28,11 @@ on:
 
 jobs:
   build:
-    uses: ks-no/github-actions-public/.github/workflows/java-library-build.yml@main
+    uses: ks-no/github-actions-public/.github/workflows/java-library-maven-central-build.yml@main
     with:
       java_version: 'java17'
       semver_increment: ${{ inputs.semver_increment }}
       version: ${{ inputs.version }}
       is_release: ${{ inputs.is_release }}
       reviewer: ${{ inputs.reviewer }}
-      runner: 'ubuntu-latest'
     secrets: inherit
